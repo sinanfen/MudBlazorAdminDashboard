@@ -26,11 +26,11 @@
             <MudMenuItem>Swedish</MudMenuItem>
             <MudMenuItem>Old Norse</MudMenuItem>
         </MudMenu>
-        <MudMenu Icon="@Icons.Material.Outlined.Widgets" Color="Color.Inherit"  Dense="true">
-            <MudMenuItem >MudBlazor</MudMenuItem>
-            <MudMenuItem >Source Code</MudMenuItem>
+        <MudMenu Icon="@Icons.Material.Outlined.Widgets" Color="Color.Inherit" Dense="true">
+            <MudMenuItem>MudBlazor</MudMenuItem>
+            <MudMenuItem>Source Code</MudMenuItem>
         </MudMenu>
-        <MudMenu  Dense="true" Class="mt-1 ml-4">
+        <MudMenu Dense="true" Class="mt-1 ml-4">
             <ActivatorContent>
                 <MudAvatar Image="images/avatar_jonny.jpg" />
             </ActivatorContent>
@@ -66,15 +66,16 @@
 
 @code {
     private ThemeManagerTheme _themeManager = new ThemeManagerTheme
-    {
-        Theme = new MudBlazorAdminDashboard(),
-        DrawerClipMode = DrawerClipMode.Always,
-        FontFamily = "Montserrat",
-        DefaultBorderRadius = 6,
-        AppBarElevation = 1,
-        DrawerElevation = 1
-    };
-    
+        {
+            Theme = new MudBlazorAdminDashboard(),
+            DrawerClipMode = DrawerClipMode.Always,
+            FontFamily = "Montserrat",
+            DefaultBorderRadius = 6,
+            AppBarElevation = 1,
+            DrawerElevation = 1,
+            DefaultElevation = 5,
+        };
+
     public bool _drawerOpen = true;
     public bool _themeManagerOpen = false;
 

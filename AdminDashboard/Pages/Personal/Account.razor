@@ -89,10 +89,10 @@
                             What type of system notifications you want to recieve to your email.
                         </MudText>
                         <div class="d-flex flex-column mt-6">
-                            <MudCheckBox T="bool" @bind-Checked="@NotificationEmail_1" Label="Threat Detection" Color="Color.Primary"></MudCheckBox>
-                            <MudCheckBox T="bool" @bind-Checked="@NotificationEmail_2" Label="Server Errors" Color="Color.Error"></MudCheckBox>
-                            <MudCheckBox T="bool" @bind-Checked="@NotificationEmail_3" Label="Server Warnings" Color="Color.Warning"></MudCheckBox>
-                            <MudCheckBox T="bool" @bind-Checked="@NotificationEmail_4" Label="Spam" Color="Color.Success"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationEmail_1" Label="Threat Detection" Color="Color.Primary"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationEmail_2" Label="Server Errors" Color="Color.Error"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationEmail_3" Label="Server Warnings" Color="Color.Warning"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationEmail_4" Label="Spam" Color="Color.Success"></MudCheckBox>
                         </div>
                     </MudItem>
                     <MudItem xs="12" sm="8">
@@ -103,10 +103,10 @@
                             What type of system notifications you want to recieve in the phone application.
                         </MudText>
                         <div class="d-flex flex-column mt-6">
-                            <MudCheckBox T="bool"  @bind-Checked="@NotificationChat_1" Label="Threat Detection" Color="Color.Primary"></MudCheckBox>
-                            <MudCheckBox T="bool"  @bind-Checked="@NotificationChat_2" Label="Server Errors" Color="Color.Error"></MudCheckBox>
-                            <MudCheckBox T="bool"  @bind-Checked="@NotificationChat_3" Label="Server Warnings" Color="Color.Warning"></MudCheckBox>
-                            <MudCheckBox T="bool" @bind-Checked="@NotificationChat_4" Label="Spam" Color="Color.Success"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationChat_1" Label="Threat Detection" Color="Color.Primary"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationChat_2" Label="Server Errors" Color="Color.Error"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationChat_3" Label="Server Warnings" Color="Color.Warning"></MudCheckBox>
+                            <MudCheckBox T="bool" Value="NotificationChat_4" Label="Spam" Color="Color.Success"></MudCheckBox>
                         </div>
                     </MudItem>
                 </MudGrid>

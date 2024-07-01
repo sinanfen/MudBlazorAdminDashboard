@@ -39,7 +39,20 @@ public class MudBlazorAdminDashboard : MudTheme
         //        DrawerWidthRight = "300px"
         //    }
         //};
-
+        PaletteLight = new PaletteLight()
+        {
+            Primary = Colors.Blue.Darken1,
+            Secondary = Colors.DeepPurple.Accent2,
+            Background = Colors.Gray.Lighten5,
+            AppbarBackground = Colors.Blue.Darken1,
+            DrawerBackground = "#FFF",
+            DrawerText = "rgba(0,0,0, 0.7)",
+            Success = "#06d79c"
+        };
+        PaletteDark = new PaletteDark()
+        {
+            Primary = Colors.Blue.Lighten1
+        };
         LayoutProperties = new LayoutProperties()
         {
             DefaultBorderRadius = "6px",
