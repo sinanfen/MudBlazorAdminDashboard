@@ -9,7 +9,7 @@
     <MudTabPanel Text="General">
         <MudGrid>
             <MudItem xs="12" sm="4" md="3">
-                <MudCard >
+                <MudCard>
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText>Public Profile</MudText>
@@ -17,13 +17,14 @@
                     </MudCardHeader>
                     <MudCardContent>
                         <div class="d-flex justify-center mb-4">
-                            <MudAvatar Image="@AvatarImageLink" Style="height:100px; width:100px;">
-                                @if(AvatarImageLink == null)
+                            <MudAvatar Style="height:100px; width:100px;">
+                                <MudImage Src="@AvatarImageLink"></MudImage>
+                                @if (AvatarImageLink == null)
                                 {
                                     <MudIcon Icon="@AvatarIcon" Size="Size.Large"></MudIcon>
                                 }
                             </MudAvatar>
-                                
+
                         </div>
                         <MudText Align="Align.Center">@FirstName @LastName</MudText>
                         <MudText Align="Align.Center">@JobTitle</MudText>
@@ -34,7 +35,7 @@
                 </MudCard>
             </MudItem>
             <MudItem xs="12" sm="8" md="9">
-                <MudCard >
+                <MudCard>
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText>Profile Details</MudText>
@@ -61,7 +62,7 @@
                                 <MudText Typo="Typo.body2">
                                     Means that only your friends will be able to see your contact details.
                                 </MudText>
-                                <MudSwitch T="bool" @bind-Checked="@FriendSwitch" Color="Color.Secondary" />
+                                <MudSwitch T="bool" Value="FriendSwitch" Color="Color.Secondary" />
                             </MudItem>
                         </MudGrid>
                     </MudCardContent>
@@ -166,7 +167,7 @@
 
     void DeletePicture()
     {
-        if(!String.IsNullOrEmpty(AvatarImageLink))
+        if (!String.IsNullOrEmpty(AvatarImageLink))
         {
             AvatarImageLink = null;
             AvatarIcon = Icons.Material.Outlined.SentimentVeryDissatisfied;

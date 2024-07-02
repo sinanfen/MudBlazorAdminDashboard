@@ -70,7 +70,9 @@
                             <tr>
                                 <td>
                                     <div class="d-flex flex-row">
-                                        <MudAvatar Image="@report.Avatar" Class="mud-elevation-25" />
+                                        <MudAvatar Class="mud-elevation-25">
+                                            <MudImage Src="@report.Avatar"></MudImage>
+                                        </MudAvatar>
                                         <div class="ml-6">
                                             <MudText Typo="Typo.subtitle2">@report.Name</MudText>
                                             <MudText Typo="Typo.body2">@report.Title</MudText>
