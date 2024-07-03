@@ -1,5 +1,5 @@
-﻿<PersonCard Style="background-color: var(--mud-palette-drawer-background);color: var(--mud-palette-drawer-text);"/>
-<MudDivider Class="mb-4" />
+﻿<PersonCard Style="background-color: var(--mud-palette-drawer-background);color: var(--mud-palette-drawer-text);" />
+<MudDivider DividerType="DividerType.Middle" Class="mb-4" />
 <MudNavMenu>
     <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">Personal</MudText>
     <MudNavLink Href="/personal/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard</MudNavLink>
@@ -8,9 +8,22 @@
     <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">App Examples</MudText>
     <MudNavLink Href="application/email" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Outlined.Email">Email</MudNavLink>
     <MudNavLink Href="application/chat" Icon="@Icons.Material.Outlined.Forum">Chat</MudNavLink>
-    <MudNavLink Href="application/todo" Icon="@Icons.Custom.Uncategorized.AlertSuccess" Disabled="true">Todo</MudNavLink>
-    <MudNavLink Href="application/users" Icon="@Icons.Material.Outlined.PeopleAlt" Disabled="true">Users</MudNavLink>
-
+    <MudNavLink Href="application/todo" Icon="@Icons.Custom.Uncategorized.AlertSuccess" Disabled="false">Todo</MudNavLink>
+    <MudNavLink Href="application/users" Icon="@Icons.Material.Outlined.PeopleAlt" Disabled="false">Users</MudNavLink>
+    <MudNavMenu Class="mud-width-full">
+        @* <MudDivider Class="my-2" /> *@
+        <MudNavLink Href="/dashboard" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+        <MudNavGroup Title="Level 0" Icon="@Icons.Material.Filled.Settings" Expanded="false">
+            <MudNavGroup Title="Level 1" Icon="@Icons.Material.Filled.AdminPanelSettings" Expanded="false">
+                <MudNavGroup Title="Level 2" Icon="@Icons.Material.Filled.People" Expanded="false">
+                    <MudNavGroup Title="Level 3" Icon="@Icons.Material.Filled.Lock" Expanded="false">
+                        <MudNavLink Href="/delete" Icon="@Icons.Material.Filled.DeleteForever">Delete Password</MudNavLink>
+                    </MudNavGroup>
+                </MudNavGroup>
+            </MudNavGroup>
+        </MudNavGroup>
+        <MudNavLink Href="/billing" Icon="@Icons.Material.Filled.Receipt">Billing</MudNavLink>
+    </MudNavMenu>
     <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">Pages</MudText>
     <MudNavGroup Title="Authentication" Icon="@Icons.Material.Outlined.AssignmentInd" HideExpandIcon="true">
         <MudNavLink Href="pages/authentication/login" Icon="@Icons.Material.Outlined.InsertDriveFile">Login</MudNavLink>

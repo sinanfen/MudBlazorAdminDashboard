@@ -18,7 +18,7 @@ public class MudBlazorAdminDashboard : MudTheme
         //};
         //MudTheme mudTheme = new MudTheme()
         //{
-        //    PaletteLight = new PaletteLight()
+        //    PaletteLight = new PaletteLight()click
         //    {
         //        Primary = Colors.Blue.Darken1,
         //        Secondary = Colors.DeepPurple.Accent2,
